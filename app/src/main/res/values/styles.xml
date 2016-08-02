@@ -3,39 +3,38 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorWhite</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorGrey</item>
-        <item name="floatingActionButtonStyle">@style/AppTheme.Fab</item>
-        <item name="editTextStyle">@style/EditTextStyle</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:textColorPrimary">@color/primary_text_default_material_dark</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.Fab" parent="FloatingActionButton">
-        <item name="floatingActionButtonColor">#2196F3</item>
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="background">@color/colorPrimary</item>
+
     </style>
 
-    <style name="MyEditTextTheme">
-        <!-- Used for the bottom line when not selected / focused -->
-        <item name="colorAccent">@color/colorPrimary</item>
-        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
-    </style>
-
-    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
-        <item name="colorAccent">@color/colorPrimary</item>
-    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="EditUnderLineStyle" parent="Base.Widget.AppCompat.ActionBar.TabBar">
         <item name="colorAccent">@color/colorWhite</item>
         <item name="textAllCaps">false</item>
     </style>
 
-    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="MyEditTextTheme">
+        <item name="colorAccent">@color/colorPrimary</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
 
 </resources>
